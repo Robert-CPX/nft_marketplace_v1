@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '.';
+import Button from './Button';
 
 const MenuItems = ({ isMobile, active, setActive }) => {
   const generateLink = (i) => {
@@ -105,7 +105,7 @@ const Navbar = () => {
               height={20}
               alt="close"
               onClick={() => setIsOpen(false)}
-              className={theme === 'lignt' && 'filter invert'}
+              className={theme === 'lignt' && 'filter invert'}// what does it mean?
             />
           ) : (
             <Image
