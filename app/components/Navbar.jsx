@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
@@ -11,7 +9,7 @@ const MenuItems = ({ isMobile, active, setActive }) => {
   const generateLink = (i) => {
     switch (i) {
       case 0: return '/';
-      case 1: return '/created-nfts';
+      case 1: return '/created-nft';
       case 2: return '/my-nfts';
       default: return '/';
     }

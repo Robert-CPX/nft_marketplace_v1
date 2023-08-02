@@ -1,3 +1,5 @@
+'use client'
+
 import Script from 'next/script';
 import '../styles/globals.css';
 import { Navbar, Footer } from './components';
@@ -9,7 +11,9 @@ const RootLayout = ({ children }) => (
       <Providers>
         <div className="dark:bg-nft-dark bg-white min-h-screen">
           <Navbar />
-          {children}
+          <div className="pt-65">
+            {children}
+          </div>
           <Footer />
         </div>
         <Script src="https://kit.fontawesome.com/7d23f8c160.js" crossOrigin="anonymous" />
